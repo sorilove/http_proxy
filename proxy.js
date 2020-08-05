@@ -99,7 +99,7 @@ function httpUserRequest(userRequest, userResponse) {
 }
 
 function main() {
-    var port = 8080; // default port if none on command line
+    var port = process.env.PORT || 8080; // default port if none on command line
 
     // check for any command line arguments
     for (var argn = 2; argn < process.argv.length; argn++) {
